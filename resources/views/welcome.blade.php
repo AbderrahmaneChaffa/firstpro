@@ -12,7 +12,7 @@
     </head>
     <body>
 
-        <h1>Salam <?php echo $nom." ".$prenom?> </h1>
+        <h1>Salam <?php echo $nom." ".$prenom. "marhaba"?> </h1>
         
         <!--h2>Les cours </!--h2>
             <--ul>
