@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\homeController;
+use Illuminate\Http\Client\Request;
+use Illuminate\Http\Request as HttpRequest;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,12 +25,15 @@ OBTIONS
 
 */
 
-Route::get('/{nom}/{prenom}', function (Illuminate\Http\Request $request) {
+Route::get('/', [homeController::class,'index']);
+
+
+/*Route::get('/{nom}/{prenom}', function (Illuminate\Http\Request $request) {
     //dd($request);
     return view('welcome',[
         'nom'=> $request->nom,
         'prenom'=> $request->prenom
         /*'prenom' => "abderrahmane",
-        'cours' =>  ['PHP', 'HTML','LARAVEL', 'CSS']*/
+        'cours' =>  ['PHP', 'HTML','LARAVEL', 'CSS']
     ]);
-});
+});*/
